@@ -124,6 +124,10 @@
             this.title = newRepr;
         });
         win.close();
+        if (selects.find('option').length==0)
+        {
+            location.reload();
+        }
     }
 
     function dismissDeleteRelatedObjectPopup(win, objId) {
